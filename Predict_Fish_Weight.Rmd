@@ -50,18 +50,12 @@ subsets(regsubsets.out,statistic="adjr2",legend="topright",main="Adjusted R^2")
 ```
    
 The best two regressor model is the one with height and width.   
-   
-## Pike
-
-### Best Models
-
-### Best Two regressor model
-
+      
 ```{r}
 best.model <- lm(Weight~Height+Width,data=Perch)
 summary(best.model)
-```
-   
+```   
+
 The best model and the best two regressor model are the same
 
 # Five Element Perch Model
@@ -72,6 +66,14 @@ anova(best_Perch_Model, five_element_perch_model)
 ```
    
 The variance table tells us there is not much difference compared to the five element model.
+
+## Pike
+
+### Best Models
+
+### Best Two regressor model
+`
+   
 
 ## Roach
 
