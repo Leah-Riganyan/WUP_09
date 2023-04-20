@@ -101,6 +101,14 @@ Pike_best_2_R_model <- lm(Weight~Length1+Length3,data=Pike)
 ```   
    
 
+```{r}   
+Pike_best.model <- lm(Weight~.,data=Pike)
+Pike_best_2_R_model <- lm(Weight~Length1+Length3,data=Pike)
+anova(Pike_best.model, Pike_best_2_R_model)
+```
+
+
+
 ## Roach
 
 ### Best Models
