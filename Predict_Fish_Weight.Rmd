@@ -57,6 +57,11 @@ The best two regressor model is the one with height and width.
 
 ### Best Two regressor model
 
+```{r}
+best.model <- lm(Weight~Height+Width,data=Perch)
+summary(best.model)
+```
+
 ## Roach
 
 ### Best Models
