@@ -68,7 +68,8 @@ The best model and the best two regressor model are the same
 ```{r}
 best_Perch_Model <- lm(Weight~Height+Width,data=Perch)
 five_element_perch_model <- lm(Weight~.,data=Perch)
-anova(best_Perch_Model, five_element_perch_model)
+one_perch_model <- lm(Weight~Height,data=Perch)
+anova(best_Perch_Model, one_perch_model)
 ```
 
 
