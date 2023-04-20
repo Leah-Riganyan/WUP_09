@@ -99,16 +99,17 @@ Pike_best.model <- lm(Weight~.,data=Pike)
 summary(Pike_best.model)
 Pike_best_2_R_model <- lm(Weight~Length1+Length3,data=Pike)
 ```   
-   
-
+      
+Through an automated process, made several models.     
+  
 ```{r}   
 Pike_best.model <- lm(Weight~.,data=Pike)
 Pike_best_2_R_model <- lm(Weight~Length1+Length3,data=Pike)
 anova(Pike_best.model, Pike_best_2_R_model)
 ```
-
-
-
+   
+Anova gave us a p value that is .0 when comparing the two models. Since the p value is lower than .05, we can tell there's a significant difference between the two.
+   
 ## Roach
 
 ### Best Models
