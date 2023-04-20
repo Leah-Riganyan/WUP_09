@@ -136,7 +136,9 @@ as.data.frame(summary.out$outmat)
 library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomleft",main="Adjusted R^2")
 ```
-
+   
+According to the graph the best model is the 2 element model since it's above all the rest. This is similar to the Perch models.   
+    
 ### Best Two regressor model
 
 ## Final Summary Statements
